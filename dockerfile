@@ -1,5 +1,5 @@
-FROM <command> ubuntu
+FROM ubuntu
 MAINTAINER Steph Hoang
 
-RUN <command> apt-get update
-RUN <command> mkdir exercise
+RUN apt-get update
+RUN mkdir exercise

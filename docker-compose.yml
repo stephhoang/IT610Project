@@ -1,8 +1,12 @@
 ---
-version: '3'
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: db-primary-pv-claim
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 512M
 
-services:
-  web:
-    image: nginx
-  database:
-    image: redis	

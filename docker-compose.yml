@@ -1,0 +1,13 @@
+version: '3'
+services:
+     mysql_database:
+         image: "mysql:latest"
+         environment: 
+            - MYSQL_ROOT_PASSWORD="password"
+     nginx-ssh:
+        image: "nginx:latest"
+        ports: 
+          - "80:80"
+          - "1022:22"
+     
+         
